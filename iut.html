@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Samuel</title>
+    <style>
+        body {
+            background-color: blue;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        
+        .schedule-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px dotted white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 150vh;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        
+        .schedule-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px dashed white;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: rgba(75, 75, 143, 0.8);
+        }
+
+        th {
+            background-color: #4b4b8f;
+            font-weight: bold;
+        }
+
+            .ist-row {
+            background-color: rgba(255, 255, 255, 0.1);
+            font-style: italic;
+            cursor: default;
+        }
+
+
+        .active {
+            background-color: #d899a4 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule-container">
+        <div class="schedule-title">Jadwal Mioo</div>
+        <table>
+    <table border="5">
+        <tr classs="white">
+            <tr>
+    <th onclick="toggleColor(this)">Hari</th>
+    <th onclick="toggleColor(this)">Senin</th>
+    <th onclick="toggleColor(this)">Selasa</th>
+    <th onclick="toggleColor(this)">Rabu</th>
+    <th onclick="toggleColor(this)">Kamis</th>
+    <th onclick="toggleColor(this)">Jumat</th>
+  </tr>
+  <tr>    
+    <td onclick="toggleColor(this)">1</td>
+    <td onclick="toggleColor(this)" rowspan="3">PAG</td>
+    <td onclick="toggleColor(this)" rowspan="3">DPPLG</td>
+    <td onclick="toggleColor(this)" rowspan="2">BING</td>
+    <td onclick="toggleColor(this)" rowspan="3">IPAS</td>
+    <td onclick="toggleColor(this)" rowspan="2">DPPLG</td>
+  </tr>
+  <tr>
+    <td onclick="toggleColor(this)">2</td>
+  </tr>
+  <tr>    
+    <td onclick="toggleColor(this)">3</td>
+    <td onclick="toggleColor(this)" rowspan="1">SNM</td>
+    <td onclick="toggleColor(this)" rowspan="1">MTK</td>
+  </tr>
+  <tr>
+  <th onclick="toggleColor(this)" colspan="6">ISTIRAHAT</th>
+  </tr>
+  <tr>
+    <td onclick="toggleColor(this)">4</td>
+    <td onclick="toggleColor(this)" rowspan="3">POR</td>
+    <td onclick="toggleColor(this)" rowspan="3">DPPLG</td>
+    <td onclick="toggleColor(this)" colspan="1">SNM</td>
+    <td onclick="toggleColor(this)" rowspan="3">IPAS</td>
+    <td onclick="toggleColor(this)" colspan="1">MTK</td>
+  </tr>
+  <tr>
+    <td onclick="toggleColor(this)">5</td>
+    <td onclick="toggleColor(this)" rowspan="2">SJR</td>
+    <td onclick="toggleColor(this)" rowspan="2">PPS</td>
+  </tr>
+  <tr>
+    <td onclick="toggleColor(this)">6</td>
+  </tr>
+  <th onclick="toggleColor(this)" colspan="6">ISTIRAHAT</th>
+  <tr>
+    <td onclick="toggleColor(this)">7</td>
+    <td onclick="toggleColor(this)" rowspan="2">MTK</td>
+    <td onclick="toggleColor(this)" rowspan="4">DPPLG</td>
+    <td onclick="toggleColor(this)" rowspan="2">BIN</td>
+    <td onclick="toggleColor(this)" rowspan="4">INF</td>
+    <td onclick="toggleColor(this)" rowspan="2">BIN</td>
+  </tr>
+  <tr>
+    <td onclick="toggleColor(this)">8</td>
+    </tr>
+    <tr>
+        <td onclick="toggleColor(this)">9</td>
+        <td onclick="toggleColor(this)" rowspan="2">BNG</td>
+        <td onclick="toggleColor(this)" rowspan="2">BJW</td>
+        <td onclick="toggleColor(this)" rowspan="2"></td>
+    </tr>
+    <tr>
+        <td onclick="toggleColor(this)">10</td>
+    </tr>
+        </table>
+    </div>
+
+    <script>
+        
+        function toggleColor(cell) {
+            cell.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
